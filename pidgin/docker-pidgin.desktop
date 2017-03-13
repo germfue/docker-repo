@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Docker Pidgin
+GenericName=DockerPidgin
+Comment=Run Pidgin in a Docker container
+Categories=Utility;Accessory;Internet;
+Version=Latest-In-Ubuntu
+Terminal=false
+Type=Application
+Exec=sh -c 'docker run -d --device /dev/snd --name pidgin -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY pidgin'
+Icon=Pidgin
+
